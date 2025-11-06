@@ -81,7 +81,6 @@ public class FileManager {
             Path path = Paths.get(FILE_NAME);
             StandardOpenOption option = Files.exists(path) ?
                     StandardOpenOption.APPEND : StandardOpenOption.CREATE;
-
             Files.write(path, data, StandardOpenOption.WRITE, option);
         } catch (IOException e) {
             throw new FileOperationException("Не удалось записать данные в файл", e);

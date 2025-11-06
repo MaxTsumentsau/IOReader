@@ -1,11 +1,7 @@
 package runner;
 
-public class FileRunner {
-    public static FileManager fileManager = new FileManager();
-
-    public FileRunner(FileManager fileManager) {
-        this.fileManager = fileManager;
-    }
+public class FileApplication {
+    public static final FileManager fileManager = new FileManager();
 
     public static void main(String[] args) {
         while (true) {
@@ -27,5 +23,4 @@ public class FileRunner {
             }
         }
     }
-
 }
